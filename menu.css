@@ -1,0 +1,213 @@
+body {
+  background-color: #fffec6;
+}
+.main {
+  margin: 0px auto;
+}
+
+.extra-1 {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  margin-bottom: 40px;
+}
+
+.lambo {
+  width: 400px;
+  height: 300px;
+  margin: 20px;
+  margin-bottom: 0%;
+  background-image: url(./LamboCollection/lambo/mikel-parera-pyGfnlF12uI-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+}
+.merc {
+  width: 400px;
+  height: 300px;
+  margin: 20px;
+  margin-bottom: 0%;
+  background-image: url(./MercCollection/merc/doruk-bayram-gs3duh5iqkw-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+}
+.aston {
+  width: 400px;
+  height: 300px;
+  margin: 20px;
+  margin-bottom: 0%;
+  background-image: url(./AstonCollection/aston/carlo-d-agnolo-QjbliQ5TLPQ-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+}
+
+.extra-2 {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+}
+
+.bmw {
+  width: 400px;
+  height: 300px;
+  margin: 20px;
+  margin-top: 0%;
+  background-image: url(./BmwCollection/bmw/joshua-naidoo-TvBnYv04u1k-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+}
+.chev {
+  width: 400px;
+  height: 300px;
+  margin: 20px;
+  margin-top: 0%;
+  background-image: url(./ChevreletCollection/chev/giorgio-trovato-yNs4KhV42OA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+}
+.rolls {
+  width: 400px;
+  height: 300px;
+  margin: 20px;
+  margin-top: 0%;
+  background-image: url(./RollsCollection/rolls/filipp-romanovski-FewfVOd0O_0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+}
+.h1 {
+  display: flex;
+  justify-content: center;
+}
+.h1 h1 {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  transition: 0.3s linear;
+}
+.h1 a {
+  text-decoration: none;
+  color: black;
+  margin-top: 20px;
+  margin-left: 20px;
+  border: 1px solid black;
+  padding: 3px;
+  padding-bottom: 0px;
+  padding-top: 7px;
+  transition: 0.3s linear;
+}
+.h1 a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Extra Animation  */
+.lambo-div {
+  width: 90%;
+  height: 100%;
+  color: white;
+  padding: 20px;
+  position: absolute;
+  overflow: visible;
+  transition: all 0.3s ease-in-out;
+  display: none;
+  opacity: 0.3;
+}
+.lambo-div p {
+  margin-top: 150px;
+  letter-spacing: 1px;
+}
+.lambo-div a {
+  text-decoration: none;
+  color: white;
+  border: 0.5px solid white;
+  padding: 2px 5px;
+  transition: 0.3s ease-in;
+}
+.lambo-div h3 {
+  font-size: 20px;
+  font-weight: 900;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.extra {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  display: none;
+  transition: 0.3s linear;
+  border-radius: 20px;
+}
+.lambo:hover .extra {
+  display: inline;
+}
+.lambo:hover .lambo-div {
+  display: inline;
+  z-index: 2;
+  opacity: 1;
+}
+.merc:hover .extra {
+  display: inline;
+}
+.merc:hover .lambo-div {
+  display: inline;
+  z-index: 2;
+  opacity: 1;
+}
+.aston:hover .extra {
+  display: inline;
+}
+.aston:hover .lambo-div {
+  display: inline;
+  z-index: 2;
+  opacity: 1;
+}
+.bmw:hover .extra {
+  display: inline;
+}
+.bmw:hover .lambo-div {
+  display: inline;
+  z-index: 2;
+  opacity: 1;
+}
+.chev:hover .extra {
+  display: inline;
+}
+.chev:hover .lambo-div {
+  display: inline;
+  z-index: 2;
+  opacity: 1;
+}
+.rolls:hover .extra {
+  display: inline;
+}
+.rolls:hover .lambo-div {
+  display: inline;
+  z-index: 2;
+  opacity: 1;
+}

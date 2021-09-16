@@ -1,0 +1,143 @@
+*{
+	box-sizing: border-box;
+}
+body {
+  font-family: lato;
+  background-color: #333;
+  color: #222;
+  margin: 0;
+  transition: transform 0.3s linear;
+  transition-delay: 0.3s;
+  position: relative;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(images/tim-meyer-GIm7wxiAZys-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  background-color: #fafafa;
+  padding: 50px;
+}
+.container.show-nav {
+  transform: rotate(-20deg);
+  transform-origin: top left;
+  transition: transform 1s linear;
+}
+.circle-container {
+  margin: 100px;
+  width: 160px;
+  height: 160px;
+  background-color: rgb(233, 206, 52);
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  top: -160px;
+  left: -180px;
+  transition: transform 0.5s linear;
+}
+.circle {
+  position: relative;
+}
+.container.show-nav .circle-container {
+  transform: rotate(-70deg);
+}
+.circle button {
+  height: 100px;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+.circle button:focus {
+  outline: none;
+}
+.circle #open {
+  position: absolute;
+  bottom: -150px;
+  right: 30px;
+}
+.circle #close {
+  position: absolute;
+  bottom: -150px;
+  left: 50px;
+}
+.container.show-nav + .nav li {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+.nav {
+  position: fixed;
+  left: 0px;
+  bottom: 40px;
+  z-index: 100;
+}
+.nav ul {
+  list-style-type: none;
+  padding-left: 30px;
+}
+.nav ul li {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: rgb(219, 189, 14);
+  font-size: 12px;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: rgb(219, 189, 14);
+  font-size: larger;
+  transition: 0.3s ease-in-out;
+}
+.nav ul li a:hover {
+  transform: scale(1.2);
+  text-decoration: underline;
+  color: #fafafa;
+}
+.nav ul li a:hover i {
+  color: #fafafa;
+}
+.nav ul li i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.nav ul li + li {
+  margin-left: 15px;
+  transform: translateX(-150%);
+}
+.nav ul li + li + li {
+  margin-left: 35px;
+  transform: translateX(-200%);
+}
+
+/* myself div */
+.myself{
+  margin-left: 350px;
+  margin-top: 700px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+
+}
+.myself h1{
+  width: 620px;
+  color: #f0b74d;
+  margin-top: 0%;
+  position: absolute;
+  right: 140px;
+  bottom: -130px;
+  font-family: fantasy;
+  font-size: 23px;
+
+}
+.myimage img{
+  width: 100px;
+  height: 120px;
+  border-radius: 150%;
+  transform: scale();
+}
